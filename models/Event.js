@@ -4,16 +4,16 @@ let Schema = mongoose.Schema
 let eventSchema= new Schema({
     name:{
         type: String,
-        required: true
+        required: false
     },
     date: {
         type: String,
-        required: true
+        required: false
     },
     cause: {
         type: Schema.Types.ObjectId,
         ref:'Cause',
-        required: true
+        required: false
     },
     owner: {
         type: Schema.Types.ObjectId,
